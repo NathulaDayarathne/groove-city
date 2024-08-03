@@ -1,0 +1,154 @@
+ body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+
+
+.rise{
+    margin-top: 100px;
+    color: #EDF5E1;
+
+}
+
+.bg-image{
+    margin-top: 75px;
+    background-image: url("../images/freddie.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+    
+}
+
+
+.theme{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-size: 40px;
+    /* color: 	#D2691E; */
+    color: #353935;
+
+    
+}
+
+section{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    
+    
+}
+
+.para1,
+.para2,
+.para3,
+.para4{
+  border: 5px solid greenyellow;
+  border-radius: 5px;
+  border-width: 3px;
+  padding: 7px;
+  margin-left: 70px;
+  margin-right: 70px;
+  background-color: yellow;
+
+    
+}
+
+.rocktopic1 h2{
+  margin-left: 100px;
+  color: #FFAA33;
+}
+
+.rocktopic2 h2{
+  margin-left: 100px;
+  color: #FFAA33;
+}
+
+.rocktopic3 h2{
+    margin-left: 100px;
+    color: #FFAA33;
+  }
+
+.rocktopic4 h2{
+    margin-left: 100px;
+    color: #FFAA33;
+}  
+
+.section1{
+  margin-top: 50px;
+  
+}
+
+.section2{
+  margin-top: 50px;
+}
+
+.section3{
+    margin-top: 50px;
+  }
+
+.section4{
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+
+
+
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 200px;
+    background: #262626;
+    overflow: auto;
+    margin-right: 10px;
+}
+.card .imgBx,
+.card .details {
+    width: 100%;
+    height:100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx {
+    top: 0;
+    left: 0;
+}
+.card:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+.card .imgBx img {
+    width: 100%;
+}
+.card .details {
+    background: #262626;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+.card:hover .details {
+    top: 0;
+    left: 0%;
+}
+.card .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+}

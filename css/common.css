@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    background-color: #4F4557;
+}
+/* navigation bar css  */
+.logo{
+    float: left;
+    height: 50px;
+    margin: 5px 0 10px;
+    
+}
+
+nav{
+    position: fixed; /*to fix the same area*/
+    width: 100%;
+    z-index: 1; /*to the top indexing position */
+    top: 0;
+    margin: 0;
+    transition: background-color 0.5s ease;
+    background-color: #ffffff;
+}
+
+nav li,a {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom:5px;
+    border-radius: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+}
+
+
+
+.list{
+   text-align: center;
+   padding:10px 40px 0;
+   margin: 0;
+    
+}
+.list li{
+    display: inline-block;
+}
+
+.list a{
+    padding: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: large;
+    float: right;
+
+    
+}
+
+.list a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(81, 255, 0);
+    border-top: 3px solid rgb(81, 255, 0);
+    transition: all 0.1s ease-in-out;
+}
+
+.list a.active{
+    color: rgb(16, 30, 61);
+    border-bottom: 3px solid rgb(14, 14, 14);
+    border-top: 3px solid rgb(0, 0, 0);
+    transition: all 0.1s ease-in-out;
+}
+.nav-scrolled{
+    background-color:#7B8FA1; /*wthin scrolling to change the navigation bar background color*/
+     
+ }
+
+ h1{
+    margin: 50px;
+ }
+
+input[type=checkbox]{
+    display: none;
+}
+
+.dropdownToggle{
+    display: none;
+    font-size: 30px;
+    user-select: none;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px){
+    .list{
+        display: none;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 67px;
+        top: -0px;
+        background-color: #4F4557;
+    }
+    input[type=checkbox]:checked~.list {
+        display: block;
+    }
+
+    /* dropdownToggle icon is set to visible */
+    .dropdownToggle {
+        display: block;
+    }
+}
+
+/*footer style*/
+
+footer{
+    background-color: #E3ACF9;
+}
+
+.end_footer h4 a{
+    text-decoration: none;
+}
+
+.end_footer h4, 
+.end_footer h5{
+    text-align: center;
+    padding: 10px 0 10px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+.end_footer hr{
+    border: 0.8px solid rgb(0, 0, 0);
+    width: 60%;
+}
+
+.editor:hover{
+    color: rgb(0, 0, 0);
+    transform: translate(0, 5px);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+
+}
+
+/*social medial style*/
+.social_media{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 0 10px;
+    margin: 0;
+    text-align: left;
+    width: 18%;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 12px;
+    align-items: center;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ff0000;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+/*top button styles*/
+#topBtn{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: invert;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.516);
+    border-radius: 10%;
+    transition: 0.3s;
+}
+#topBtn:hover{
+    transform: translate(2px,2px);
+    color: rgba(255, 255, 255, 0.452);
+    color: #6699ff;
+    background-color: hsla(295, 100%, 50%, 0.589);
+}
+#topBtn:active{
+    color: rgba(166, 13, 13, 0.878);
+    transform: none;
+}
+
+/*scroll bar, scroll button style*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 2px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(101, 99, 102); 
+    border-radius: 2px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}

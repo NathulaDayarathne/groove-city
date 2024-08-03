@@ -1,0 +1,164 @@
+* {
+    box-sizing: none;
+  }
+  
+  body {
+    margin: 0;
+    
+  }
+
+  /* background image styles */
+.background-image{
+    background-image: url("../images/music.jpg");
+        height: 100vh; 
+        width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    
+}
+
+.topic{
+    position: absolute;
+    top: 100px;
+    left: auto;
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    color: rgb(252, 250, 246);
+}
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-left: 50px;
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+  .empty-area{
+    width: 625px;
+	height: 200px;
+	margin: 10px 15px 10px 10px;
+    border-radius: 10px;
+    background-image: url("../images/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* dark theme*/
+.img-dark{
+    background-image: url("../images/cover3.jpg");
+}
+.sub-topic-dark{
+    color: #aaa;
+}
+.hidden-dark {
+  background-color:#11130c;
+}
+.footer-dark{
+    background-color:#16191c ;
+}
+.nav-scroll-dark{
+    background-color: #11130c;
+}
+
+/* light theme*/
+.img-light{
+    background-image: url("../images/cover2.jpg");
+}
+.sub-topic-light{
+    color: #181e46;
+}
+.hidden-light {
+  background-color:#a49e9c;
+}
+.footer-light{
+    background-color:#181e46;
+}
+.nav-scroll-light{
+    background-color: #feeaeb;
+}
+
+
+/* buttons */
+
+.btn{
+    background-color:#aaa;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;   
+
+}
+
+.btn:hover{
+    box-shadow: 0px 1px 10px #555;
+}
+
+#default{
+    background-color: rgb(6, 73, 73);
+}
+
+#light{
+    background-color:#f3f0df;
+}
+
+#dark{
+    background-color: black;
+
+}
+
+.color-change,
+.font-change,
+.color-picker{
+    text-align: center;
+   
+}
+
+#color-picker {
+    margin-top: 4px;
+    border: none;
+    padding: 0;
+}

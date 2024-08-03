@@ -1,0 +1,90 @@
+/* background image styles */
+.background-image{
+    background-image: url("../images/hiphopbackground.jpg");
+    height: 100vh; 
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.topic{
+    position: absolute;
+    top: 100px;
+    left: auto;
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+    color: goldenrod;
+}
+
+/* navigation bar styles and anchors */
+nav {
+    background-color: white;
+
+}
+
+
+.section{
+    text-align: center;
+}
+
+
+section{
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+   
+}
+
+section img{
+    width: 100%;
+    height: 200px;
+}
+
+fieldset{
+    margin: 20px;
+    border-radius: 10px;
+    border: 5px solid black;
+    border-style: double;
+    
+}
+
+legend{
+    font-size: medium;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section div{
+    margin: 15px;
+    width: 310px;
+	height: 430px;
+    box-shadow: 0px 1px 10px #dea1d4;
+    border-radius: 10px;
+    overflow: hidden;
+   
+    
+}
+
+section p{
+    margin:10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    
+}
+
+section div:hover{
+    box-shadow: 0px 1px 10px #e17b0d;
+}
+
+section h3{
+    margin: 5px 0 5px 10px;
+    text-align: center;
+}
+

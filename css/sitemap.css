@@ -1,0 +1,23 @@
+.svg{
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0px 1px 10px #302e2e);
+    background-color: lightsalmon;
+
+}
+
+.siteMap{
+    margin-top: 150px;
+}
+
+
+.branch{
+    fill: rgb(6, 73, 73);
+
+}
+
+.svg g:hover {
+    fill: rgb(37, 14, 122);
+    
+}
+

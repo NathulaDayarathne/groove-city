@@ -1,0 +1,137 @@
+.slides{
+    display: none; /* hide all images using none attribute */
+}
+
+img{
+    vertical-align: middle; /*all images middle in the vertical axis*/
+
+
+}
+
+/*from the left get some margin to the */
+.genres{
+    margin-left: 55px;
+}
+
+/*slideshow css */
+.slideshow{
+    top: 50px;
+    max-width: 100%;
+    position: relative; /* position from the normal position*/
+    margin-top: 40px;
+    margin: 40px 20px 20px 20px; /*to margin from the page four sides*/
+}
+
+.previous,
+.next{
+    cursor: pointer;
+    position: absolute; /*avoid overlapping from the image*/
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease; /* transition effect to both start and end within 0.6 second*/
+    border-radius: 3px 3px 3px 3px;
+    user-select: none; /*avoid selecting or highlighted from user*/
+}
+
+/* Position the "next button" to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.previous:hover,
+.next:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+/*square indicator*/
+.pinpoint{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(233, 4, 4, 0.712);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: -50px;
+}
+
+/*when hover the indicator squares change color */
+.active_b,
+.pinpoint:hover{
+    background-color: rgba(8, 241, 171, 0.377);
+}
+
+/*fading animation in-between two slides change*/
+.fady{
+    animation-name: fady;
+    animation-duration: 1s;
+}
+
+/*keyframe fade from .4 to 1 using opacity*/
+@keyframes fady{
+    from{
+        opacity: 0.4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.individuals{
+    margin: 0 50px 50px;
+    display: flex; /*define individuals inline or block*/
+    justify-content: center; /*align flex items to the center*/
+}
+
+.individuals div{
+    width: 350px;
+    height: 350px;
+    margin: 50px 15px 50px 10px;
+    position: relative;
+    overflow: hidden; /*hide the overflowing content*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 164, 185, 0.76);
+    transition: 0.4s; /*after hover the division it will transite within 0.4seconds*/
+    cursor: pointer;
+    background-color: rgb(81, 115, 138);
+}
+
+.individuals img{
+    margin: 5px 0 5px 0;
+    width:265px;
+    height: 390px;
+    border-radius: 10px;
+    transition: 0.4s;
+    
+}
+
+.individuals div:hover{
+    transform: scale(1.1);
+    background-color: rgb(34, 107, 103);
+    box-shadow: 0 0 20px rgba(209, 92, 209, 0.808);
+}
+
+.individuals img:hover {
+    transform: rotate(360deg); /*after hover the division rotate once and take place current */
+  }
+
+.category{
+    color: rgb(4, 0, 255);
+    position: absolute; /*display genre name without overlaping*/
+    top: 10px;
+    left: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+
+}

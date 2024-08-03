@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>GrooveCity | Shop</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel = "stylesheet" href="css/common.css">  
+    
+    <link rel = "stylesheet" href="css/shop.css">
+    <script src="JS/navbar.js"></script> 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <!-- LOGO -->
+            <a class="logo" href="main.html" title="Home">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a>
+
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="dropdownToggle">&#9776;</label>
+            <!-- NAVIGATION MENU -->
+
+
+            <ul class="list">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="studentdetails.html">About Us</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    
+
+    <main>
+
+        <div class="bigdiv">
+        
+        <div class="main-container">
+
+            <div class="myheader">
+                <div class="nav container">
+                    
+                    
+                        <div class="navshopbuttons">                          
+                                <button class="shopbuttonOne" onclick="navigateTo('shoptopicOne')">BestSelling</button>
+                                <button class="shopbuttonOne" onclick="navigateTo('shoptopicTwo')">Classic</button>
+                                <button class="shopbuttonOne" onclick="navigateTo('shoptopicThree')">Alternative</button>                         
+                        </div>
+
+
+                    <i class="bx bx-cart bx-flip-horizontal" id="cart-icon" ></i>
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        
+                        <!-- contents of the cart -->
+                        <div class="cart-content">
+
+                        </div>
+
+                        <!-- Total -->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!-- Buy button -->
+                        <button type="button" class="btn-buy">Buy Now</button>
+                        <!-- Closing the cart -->
+                        <i class="bx bx-x" id="cart-close" ></i>
+                    </div>
+                </div>
+            </div>
+        
+            <section class="shop container">
+
+                <div class="shoptopic1">
+                <h2 id="shoptopicOne">Bestselling Albums</h2>
+                </div>
+
+                <div class="shop-content"> 
+
+                    <div class="card">
+                        <img src="images/albumOne.png" style="height:150px" class="product-img" alt="albOne">
+                        <h2 class="product-title">Culdesac- Childish Gambino</h2>
+                        <h2>Audio CD</h2>
+                        <p class="price">$26.99</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/eminem.jpg" style="height:150px" class="product-img" alt="albTwo">
+                        <h2 class="product-title">The Eminem Show - Limited edition</h2>
+                        <h2>Audio CD</h2> 
+                        <p class="price">$15.99</p>
+                        <button class="addtocart_btn">Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/weeknd.png" style="height:150px" class="product-img" alt="albThree">
+                        <h2 class="product-title">Starboy - The Weeknd</h2>
+                        <h2>Audio CD</h2>
+                        <p class="price">$27.99</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div> 
+   
+                    <div class="card">
+                        <img src="images/album4.jpg" style="height:150px" class="product-img" alt="albfour">
+                        <h2 class="product-title">Shawn Mendez - Illuminate</h2>
+                        <h2>Audio CD</h2>
+                        <p class="price">$35.99</p>
+                        <button class="addtocart_btn">Add to cart</button>
+                    </div> 
+
+   
+                </div> <br>
+
+                <div class="shoptopic2">
+                <h2 id="shoptopicTwo">Classic & Vintage</h2>
+                </div>
+
+                <div class="lalala">
+
+                    <div class="card">
+                        <img src="images/album5.jpg" style="height:150px" class="product-img" alt="albFive">
+                        <h2 class="product-title">The doors - Waiting for the sun</h2>
+                        <h2>The vinyl</h2>
+                        <p class="price">$72.99</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/album6.jpg" style="height:150px" class="product-img" alt="albSix">
+                        <h2 class="product-title">Pink Floyd - The Division Bell</h2>
+                        <h2>The Vinyl</h2>
+                        <p class="price">$39.99</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/album7.jpg" style="height:150px" class="product-img" alt="albseven">
+                        <h2 class="product-title">Kind of Blue - Miles Davis</h2>
+                        <h2>The Vinyl - Deluxe Edition</h2>
+                        <p class="price">$28.50</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/album8.jpg" style="height:150px" class="product-img" alt="albEight">
+                        <h2 class="product-title">What's Going On - Marvin Gaye</h2>
+                        <h2>The vinyl(Collector's edition)</h2>
+                        <p class="price">$32.99</p>
+                        <button class="addtocart_btn" >Add to cart</button>
+                    </div>
+
+        
+                </div> <br>
+
+                <div class="shoptopic3">
+                    <h2 id="shoptopicThree">Alternative</h2>
+                    </div>
+    
+                    <div class="topic44">
+    
+                        <div class="card">
+                            <img src="images/album9.jpg" style="height:150px" class="product-img" alt="albNine">
+                            <h2 class="product-title">The Queen Is Dead - The Smiths</h2>
+                            <h2>Audio CD(Extended Version)</h2>
+                            <p class="price">$42.99</p>
+                            <button class="addtocart_btn" >Add to cart</button>
+                        </div>
+    
+                        <div class="card">
+                            <img src="images/album10.jpg" style="height:150px" class="product-img" alt="albTen">
+                            <h2 class="product-title">Black Star - David Bowie</h2>
+                            <h2>Premium DVD</h2>
+                            <p class="price">$49.99</p>
+                            <button class="addtocart_btn" >Add to cart</button>
+                        </div>
+    
+                        <div class="card">
+                            <img src="images/album11.jpg" style="height:150px" class="product-img" alt="albEleven">
+                            <h2 class="product-title">St. Elsewhere - Gnarls Barkley</h2>
+                            <h2>Audio CD with Booklet</h2>
+                            <p class="price">$36.99</p>
+                            <button class="addtocart_btn" >Add to cart</button>
+                        </div>
+    
+                        <div class="card">
+                            <img src="images/album12.jpg" style="height:150px" class="product-img" alt="albTwelve">
+                            <h2 class="product-title">Art and Life - Beenie Man</h2>
+                            <h2>The Vinyl(Limited Edition)</h2>
+                            <p class="price">$24.99</p>
+                            <button class="addtocart_btn" >Add to cart</button>
+                        </div>
+    
+                        
+
+                        </div>
+
+
+            </section>
+
+        </div>
+
+        <!-- forms to collect payment details -->
+
+        <form action="/" method="GET">
+
+            <fieldset class="form-1" id="section1form">
+
+                <div class="billing" style="background-color: #F5F5F5">
+
+                    <h2>Billing Address</h2>
+                
+                    <div class="form-input">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address<span style="color:red">*</span></label>
+                        <input type="text" id="adr" name="address1"><br><br>
+                    </div>
+                        
+                    <div class="form-input">    
+                        <label for="city">Town/City</label>
+                        <input type="text" id="city" name="town" required><br><br>
+                    </div>
+                        
+                    <div class="form-input">
+                        <label for="state">State/Region</label>
+                        <input type="text" id="state" name="state" ><br><br>
+                    </div>
+                        
+                    <div class="form-input">    
+                        <label for="post"> Postcode/Zip code<span style="color:red">*</span></label>
+                        <input type="text" id="post" name="city" ><br><br>
+                    </div>
+            
+                    <div class="form-input">
+                        <label for="country">Country<span style="color:red">*</span></label>
+                        <input type="text" id="country" name="city" required><br><br>
+                    </div>
+
+                </div>
+
+                <div class="contact" style="background-color: #DFD7BF">
+            
+                    <h2>Contact Details</h2><br>
+
+                    <div class="form-input">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="firstname" ><br><br>
+                    </div>
+                
+                    <div class="form-input">
+                        <label for="email">Email<span style="color:red">*</span></label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+            
+                    <div class="form-input">
+                        <label for="tel">Telephone Number</label>
+                        <input type="tel" id="tel" name="tel" required><br><br>
+                    </div>
+
+                </div>    
+
+                <div class="error-button">
+                    <span id="error-msg"></span>
+                    <button type="button" class="next-btn" onclick="auto()">Next</button>
+                </div>
+                
+            </fieldset>
+
+            <div class="form-2" id="section2form">
+
+                <div class="prefilled-box" style="background-color: aquamarine">
+
+                    <h2>Order Summary</h2>
+
+                    <pre>Address: <span id="autofill"></span><i class="bx bxs-check-circle" style="color:#70b959" ></i></pre>
+                    <pre>Contact: <span id="autofill-1"></span><i class="bx bxs-check-circle" style="color:#70b959"></i></pre>
+
+                </div>
+                
+                <div class="payment-box" style="background-color: aquamarine">
+
+                    <h2>Payment Details</h2><br>
+                
+                    <div class="form-input">
+                        <label for="cardnum"> Card number<span style="color:red">*</span></label>
+                        <input type="number" id="cardnum" name="cardum" required><br><br>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="holdersname"> Cardholder's name<span style="color:red">*</span></label>
+                        <input type="text" id="holdersname" name="holdersname" required><br><br>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="expdate"> Expiry Date<span style="color:red">*</span></label>
+                        <input type="date" id="expdate" name="expdate" required><br><br>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="seccode"> CVV<span style="color:red">*</span></label>
+                        <input type="number" id="seccode" name="seccode" required><br><br>
+                    </div>
+
+                </div> 
+                
+                <div class="submit-back">
+                    <input type="submit" name="Submit" value="Submit" class="submit-btn">
+                    <button type="button" class="back-btn">Back</button>
+                </div>
+   
+            </div>
+
+            <div class="alertbox">
+                <p><span><i class="bx bxs-check-circle" style="color:#70b959" id="check"></i></span>
+                    Your purchase has been completed! </p>
+            </div>
+
+        </form>
+    
+        <script src="JS/shop.js"></script>
+
+        </div>
+    
+    </main>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="JS/topBtn.js"></script>
+    <!--Social media icons-->
+    <div class="social_media">
+        <!--Using font awesome icons-->
+        <!--target="_blank" to use open the socoal media platform with new tab -->
+        <a href="https://www.facebook.com/iitsl" class="fa fa-facebook" target="_blank" title="Follow us on facebook"></a> 
+        <a href="#" class="fa fa-twitter" target="_blank" title="Follow us on Twitter"></a>
+        <a href="https://www.instagram.com/iitlife/" class="fa fa-instagram" target="_blank" title="Follow us on Instagram"></a>
+        <a href="https://www.youtube.com/@iitsrilanka" class="fa fa-youtube" target="_blank" title="Follow us on Youtube"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" title="Follow us on Pinterest"></a>
+    </div>
+
+
+    <footer>
+
+        <div class="end_footer">
+            <!--insert in the a tag individual pages links, and open it in the same webpage  -->  
+            <h4>
+                Creator <br> <a href="nathula.html" class="editor">Nathula Dayarathne</a> <br>
+            </h4>
+            <hr>
+
+            <h5>&copy; 2023-2024 GrooveCity | All Right Reserved</h5>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>  

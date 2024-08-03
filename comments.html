@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrooveCity | Comments</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/comments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="JS/navbar.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <a class="logo" href="main.html" title="Home">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a>
+            <!-- Using checkbox to toggle the menu -->
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="dropdownToggle">&#9776;</label>
+            <!-- Navigation Menu List-->
+
+            <ul class="list">
+                <li class="a"><a href="main.html">Home</a></li>
+                <li class="a"><a href="shop.html">Shop</a></li>
+                <li class="a"><a href="quiz.html">Quiz</a></li>
+                <li class="a"><a href="gallery.html">Gallery</a></li>
+                <li class="a"><a href="studentdetails.html">About Us</a></li>
+                <li class="a"><a href="comments.html" class="active">Comments</a></li>
+                <li class="a"><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--form to get the user details-->
+        <form id="feedback_for_us"  action="mailto:mandeepadesilva4.14@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+            
+            <fieldset class="fieldset">
+                    <legend><mark style="background-color: chartreuse;">Keep in touch with us</mark></legend>
+                <!--get the first name from the user-->
+                <div class="inputs container">
+                    <p>Enter your first name</p>
+                    <input type="text" name="fname" id="fname" placeholder="Your First Name" maxlength="8" autofocus>
+                </div>
+                
+                <!--get the last name from the user-->
+                <div class="inputs container">
+                    <p>Enter your last name</p>
+                    <input type="text" name="lname" id="lname" placeholder="Your Last Name">
+                </div>
+                
+                <!--get the email address from the user-->
+                <div class="inputs container">
+                    <p>Your email address</p>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                
+                
+                <div class="inputs container" id="radio">
+                    <p>
+                        How Satisfied were you with our website today? Choose from 
+                        0-10, 0 being not satisfied and 10 being very satisfied.
+                    </p>
+                    <!--get the rating from the user using radio button-->
+                    <div class="rating_button container">
+                        <div class="radio_button">
+                            <label for="rating0" class="number">0</label>
+                            <input type="radio" class="clicked" name="rating" id="rating0" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating1" class="number">1</label>
+                            <input type="radio" class="clicked" name="rating" id="rating1" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating2" class="number">2</label>
+                            <input type="radio" class="clicked" name="rating" id="rating2" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating3" class="number">3</label>
+                            <input type="radio" class="clicked" name="rating" id="rating3" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating4" class="number">4</label>
+                            <input type="radio" class="clicked" name="rating" id="rating4" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating5" class="number">5</label>
+                            <input type="radio" class="clicked" name="rating" id="rating5" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating6" class="number">6</label>
+                            <input type="radio" class="clicked" name="rating" id="rating6" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating7" class="number">7</label>
+                            <input type="radio" class="clicked" name="rating" id="rating7" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating8" class="number">8</label>
+                            <input type="radio" class="clicked" name="rating" id="rating8" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating9" class="number">9</label>
+                            <input type="radio" class="clicked" name="rating" id="rating9" value="0">
+                        </div>
+
+                        <div class="radio_button">
+                            <label for="rating10" class="number">10</label>
+                            <input type="radio" class="clicked" name="rating" id="rating10" value="0">
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--get the reason for the rating from the user-->
+                <div class="inputs container">
+                    <div class="textarea ">
+                        <p>Could you please tell us your reason for giving this rating</p>
+                        <textarea name="why" id="why" cols="100" rows="7" placeholder="Enter your responses"></textarea>
+                    </div>
+                   
+                </div>
+
+                <!--get dropdown option from user-->
+                <div class="inputs container">
+                    <div>
+                        <p>How did you want to complete this task today?(optional)</p>
+                        <select name="method" >
+                            <option value="option to select">Please Select(^_^)</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="email">Email</option>
+                            <option value="chat">Chat</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--get dropdown option from user-->
+                <div class="inputs container">
+                    <div>
+                        <p>If you had to complete this task again,
+                            how would you prefer to do it?(optional)
+                        </p>
+                        <select name="method" >
+                            <option value="option to select">Please Select(^_^)</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="email">Email</option>
+                            <option value="chat">Chat</option>
+                        </select>
+                    </div>
+                </div>
+                <!--to submit all the details you entered in the fields-->
+                <button class="submitBtn" type="submit">Submit</button>
+                <!--to reset all the details you entered in the fields and fill again-->
+                <button class="resetBtn" type="reset">Reset</button>
+            </fieldset>
+        </form>
+        <!--fill all the mandatory fields and after click the submit button display a feed back message -->
+        <div id="greeting_message">
+            <h1>Thank you for your feedback</h1>
+            <p>
+                We are always looking for ways to improve our website and your feedback is valuable to us.
+            </p>
+        </div> 
+    </main>
+    <!--Without scrolling press the TOP button to go to the top of the page-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="JS/topBtn.js"></script>
+    <!--Social media icons-->
+    <div class="social_media">
+        <!--Using font awesome icons-->
+        <!--target="_blank" to use open the socoal media platform with new tab -->
+        <a href="https://www.facebook.com/iitsl" class="fa fa-facebook" target="_blank" title="Follow us on facebook"></a> 
+        <a href="#" class="fa fa-twitter" target="_blank" title="Follow us on Twitter"></a>
+        <a href="https://www.instagram.com/iitlife/" class="fa fa-instagram" target="_blank" title="Follow us on Instagram"></a>
+        <a href="https://www.youtube.com/@iitsrilanka" class="fa fa-youtube" target="_blank" title="Follow us on Youtube"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" title="Follow us on Pinterest"></a>
+    </div>
+
+    <footer>
+        <div class="end_footer">
+            <!--insert in the a tag individual pages links, and open it in the same webpage  -->   
+            <h4>
+                Creator <br> <a href="mandeepa.html" class="editor">Mandeepa De Silva</a> <br>
+            </h4>
+            <hr>
+
+            <h5>&copy;2023 ALL RIGHT RESERVED</h5>
+        </div>
+    </footer> 
+    <script src="JS/main.js"></script>
+    <script src="JS/comments.js"></script>
+</body>
+</html>

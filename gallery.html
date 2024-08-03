@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> Groove City | Gallery </title>
+
+        <link rel = "stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel = "stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+        <script src="JS/navbarx.js"></script>
+        <script src="JS/gallery.js"></script>
+
+        
+        
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+
+                <!-- LOGO -->
+                <a class="logo" href="main.html" title="Home">
+                    <img class="logo" src="images/logo.jpg" alt="logo">
+                </a>
+        
+                <!-- NAVIGATION MENU -->
+                <ul class="list">
+                    <li><a href="main.html"> Home </a></li>
+                    <li><a href="shop.html"> Shop </a></li>
+                    <li><a href="quiz.html"> Quiz </a></li>
+                    <li><a href="gallery.html" class="active"> Gallery </a></li>
+                    <li><a href="studentdetails.html"> About Us </a></li>
+                    <li><a href="comments.html"> Comments </a></li>
+                    <li><a href="sitemap.html"> Site Map </a></li>
+                </ul>
+
+            </nav>
+
+
+        </header>
+
+        <main>
+
+            <div class="background-image">
+                <div class="topic" >
+                    <fieldset>
+                        <h1 style="text-align: left; margin-top: 80px; justify-content: center;flex-direction: column; border: none;"> Gallery </h1>
+                    </fieldset>
+                </div>
+            </div>
+
+
+            <div class="color-change">      <!--to change the color scheme of the web page-->
+                <button id="default" class="btn" onclick="defaultMode()"></button>
+                <button id="light" class="btn" onclick="lightMode()"></button>
+                <button id="dark" class="btn" onclick="darkMode()"></button>
+            </div>
+
+            <div class="color-picker">      <!--randomized color picker-->
+                <input type="color" id="color-picker" oninput="colorPicker()">
+            </div>
+
+            <div class="font-change">        <!--adjust the font size of the text-->
+                <button class="btn" onclick="smallFont()">-A</button>
+                <button class="btn" onclick="defaultFont()">A</button>
+                <button class="btn" onclick="mediumFont()">A+</button>
+            </div>
+    
+            
+
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                            <img src="images/gunsNRoses.jpg" style="width:25%" alt="Guns & Roses">
+                            <img src="images/ledZepellin.jpeg" style="width:25%" alt=" Led Zepellin">
+                            <img src="images/theBeatles.jpeg" style="width:25%" alt=" The Beatles">
+                            <img src="images/runDMCHipHop.jpeg" style="width:25%" alt="Run D.M.C">
+                            <img src="images/ABBAPop.jpeg" style="width:25%" alt=" ABBA ">
+                            <img src="images/pinkFloyd.jpeg" style="width:25%" alt="Pink Floyd">
+                            <img src="images/theMelodiansRaggae.jpg" style="width:25%" alt="The Melodians">
+                    </div>
+                    <div class="column">
+                        <img src="images/wuTangHipHop.jpg" style="width:25%" alt="Wu-Tang Clan">
+                        <img src="images/queenPop.jpg" style="width:25%" alt="Queen ">
+                        <img src="images/theMellodiansRaggae2.jpeg" style="width:25%" alt="The Mellodians">
+                        <img src="images/runDMCHipHop2.jpeg" style="width:25%" alt="Run D.M.C">
+                        <img src="images/wuTangHipHop2.jpeg" style="width:25%" alt="Wu-Tang Clan">
+                        <img src="images/bobMrleyRaggae2.jpeg" style="width:25%" alt="Bob Marley">
+                    </div>  
+                    <div class="column">
+                        <img src="images/queenPop2.jpeg" style="width:25%" alt=" Queen">
+                        <img src="images/ABBAPop2.jpeg" style="width:25%" alt=" ABBA ">
+                        <img src="images/ACDC.jpg" style="width:25%" alt=" AC/DC">
+                        <img src="images/bobMrleyRaggae2.jpeg" style="width:25%" alt=" Bob Marley">
+                        <img src="images/beatles2.jpg" style="width:25%" alt="The Beatles">
+                        <img src="images/gunsNRoses2.jpg" style="width:25%" alt=" Guns & Roses">
+                        <img src="images/theMelodiansRaggae.jpg" style="width:25%" alt="The Melodians">
+                        <img src="images/wuTangHipHop.jpg" style="width:25%" alt=" Wu-Tang Clan">
+                    </div>
+                    <div class="column">
+                        <img src="/images/scorpions.jpeg" style="width:25%" alt="Scorpions">
+                        <img src="/images/taylorSwift.jpeg" style="width:25%" alt="Taylor Swift">
+                        <img src="/images/beatles2.jpg" style="width:25%" alt=" The Beatles">
+                        <img src="/images/jayZ.jpeg" style="width:25%" alt="Jay-Z">
+                        <img src="/images/taylorSwift2.jpeg" style="width:25%" alt="Taylor Swift">
+                        <img src="/images/jayZ2.jpeg" style="width:25%" alt="Jay-Z">
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+        <script src="JS/topBtn.js"></script>
+        <!--Social media icons-->
+        <div class="social_media">
+            <!--Using font awesome icons-->
+            <!--target="_blank" to use open the socoal media platform with new tab -->
+            <a href="https://www.facebook.com/iitsl" class="fa fa-facebook" target="_blank" title="Follow us on facebook"></a> 
+            <a href="#" class="fa fa-twitter" target="_blank" title="Follow us on Twitter"></a>
+            <a href="https://www.instagram.com/iitlife/" class="fa fa-instagram" target="_blank" title="Follow us on Instagram"></a>
+            <a href="https://www.youtube.com/@iitsrilanka" class="fa fa-youtube" target="_blank" title="Follow us on Youtube"></a>
+            <a href="#" class="fa fa-pinterest" target="_blank" title="Follow us on Pinterest"></a>
+        </div>
+
+
+        <footer>
+
+            <div class="end_footer">
+                <!--insert in the a tag individual pages links, and open it in the same webpage  -->  
+                <h4>
+                    Creator : <br> <a href="Lisath.html" class="editor">Lisath Thisurasiri</a> <br>
+                </h4>
+                <hr>
+
+                <h5>&copy; 2023-2024 GrooveCity | All Right Reserved</h5>
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>

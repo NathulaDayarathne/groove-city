@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Groove City | Quiz </title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel = "stylesheet" href="css/templatemain.css">
+    <link rel = "stylesheet" href="css/quiz.css">
+    <script src="js/navbar.js"></script>
+    <link rel = "stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- LOGO -->
+            <a class="logo" href="main.html" title="Home">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a>
+            <!-- NAVIGATION MENU -->
+
+
+            <ul class="list">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="shop.html" >Shop</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="studentdetails.html">About Us</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="background-image" id="background">
+
+        <div class="sub-topic" >
+            <h2>Music Maestro</h2>
+        </div>
+    </div>
+
+        <div class="container">
+
+            <div class="panel">
+
+                <h6 title="Timer" id="timer">Timer</h6>
+
+                <h4 id="number"> number </h4>
+
+                <h3 class="question-container" id="question">
+                    Question is here.
+                </h3>
+                <br>
+
+                <div class="result"> </div>
+
+                <div class="option-container">
+                    <button class="option" id="op1" onclick="deactivate()">option1</button>
+                    <button class="option" id="op2" onclick="deactivate()">option2</button>
+                    <button class="option" id="op3" onclick="deactivate()">option3</button>
+                    <button class="option" id="op4" onclick="deactivate()">option4</button>
+                </div>
+
+                <button class="next" >Next</button>
+
+            </div>
+
+            <div class="end"> 
+                <h1 class="heading">heading</h1>
+                <h5 class="time">time</h5>
+                <h5 class="score">score</h5>
+                <h5 class="grade">grade</h5>
+                <h5 class="comment">comment</h5>
+
+                <button type="button" class="again" onClick="window.location.reload()"> Start again </button>
+            </div>
+
+            <script src="JS/quiz.js"></script>
+        </div>
+
+    </main>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="JS/topBtn.js"></script>
+    <!--Social media icons-->
+    <div class="social_media">
+        <!--Using font awesome icons-->
+        <!--target="_blank" to use open the socoal media platform with new tab -->
+        <a href="https://www.facebook.com/iitsl" class="fa fa-facebook" target="_blank" title="Follow us on facebook"></a> 
+        <a href="#" class="fa fa-twitter" target="_blank" title="Follow us on Twitter"></a>
+        <a href="https://www.instagram.com/iitlife/" class="fa fa-instagram" target="_blank" title="Follow us on Instagram"></a>
+        <a href="https://www.youtube.com/@iitsrilanka" class="fa fa-youtube" target="_blank" title="Follow us on Youtube"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" title="Follow us on Pinterest"></a>
+    </div>
+
+
+    <footer>
+        <div class="end_footer">
+            <!--insert in the a tag individual pages links, and open it in the same webpage  -->  
+            <h4>
+                Creator <br> <a href="praveen.html" class="editor">Praveen De Silva</a> <br>
+            </h4>
+            <hr>
+
+            <h5>&copy; 2023-2024 GrooveCity | All Right Reserved</h5>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>  

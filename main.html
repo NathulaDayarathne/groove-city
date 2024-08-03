@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrooveCity | Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="JS/navbar.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <a class="logo" href="main.html" title="Home">
+                <img class="logo" src="images/logo.jpg" alt="logo">
+            </a>
+            <!-- Using checkbox to toggle the menu -->
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="dropdownToggle">&#9776;</label>
+            <!-- Navigation Menu List-->
+
+            <ul class="list">
+                <li><a href="main.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="studentdetails.html">About Us</a></li>
+                <li><a href="comments.html">Comments</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--slideshow section-->
+        <div class="slideshow">
+            <div class="slides fady">
+                <img src="images/Slides/slide1.jpg" alt="Marron5 Group" style="width: 100%">
+            </div>
+            <div class="slides fady">
+                <img src="images/Slides/slide2.jpg" alt="Bob Marley" style="width: 100%">
+            </div>
+            <div class="slides fady">
+                <img src="images/Slides/slide3.jpg" alt="G-Unit Group" style="width: 100%">
+            </div>
+            <div class="slides fady">
+                <img src="images/Slides/slide4.jpg" alt="Metallica Band" style="width: 100%">
+            </div>
+            <!--Arrow buttons for the see next or previous slideshow image  -->
+            <a class="previous" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+        <!--Four square buttons on the bottom of the slideshow, it indicate current states of the slideshow image-->
+        <div style="text-align: center">
+            <span class="pinpoint" onclick="currentSlide(1)"></span> 
+            <span class="pinpoint" onclick="currentSlide(2)"></span> 
+            <span class="pinpoint" onclick="currentSlide(3)"></span> 
+            <span class="pinpoint" onclick="currentSlide(4)"></span>
+        </div>
+        
+        <!--Heading for the four pages-->
+        <hr>
+        <div class="genres"> 
+            <h2>Explore More</h2>
+        </div>
+        <hr>
+        <!--individual pages declare from here-->
+        <div class="individuals">
+            <div>
+                <a href="pop.html" target="_blank">
+                    <img src="images/mj.jpg" alt="Pop Image">
+                    <p class="category">POP</p>
+                </a>
+            </div>
+            <div>
+                <a href="Rock.html" target="_blank">
+                    <img src="images/rock1.jpg" alt="Rock Image">
+                    <p class="category">ROCK</p>
+                </a>
+            </div>
+            <div>
+                <a href="Reggae.html" target="_blank">
+                    <img src="images/bob1.jpg" alt="Raggae Image">
+                    <p class="category">RAGGAE</p>
+                </a>
+            </div>
+            <div>
+                <a href="Hip-Hop.html" target="_blank">
+                    <img src="images/rap.jpg" alt="Hophop Image" height=300>
+                    <p class="category">HIPHOP</p>
+                </a>
+            </div>
+            
+        </div>
+        
+    </main>
+    <!--Without scrolling press the TOP button to go to the top of the page-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script src="JS/topBtn.js"></script>
+    <!--Social media icons-->
+    <div class="social_media">
+        <!--Using font awesome icons-->
+        <!--target="_blank" to use open the socoal media platform with new tab -->
+        <a href="https://www.facebook.com/iitsl" class="fa fa-facebook" target="_blank" title="Follow us on facebook"></a> 
+        <a href="#" class="fa fa-twitter" target="_blank" title="Follow us on Twitter"></a>
+        <a href="https://www.instagram.com/iitlife/" class="fa fa-instagram" target="_blank" title="Follow us on Instagram"></a>
+        <a href="https://www.youtube.com/@iitsrilanka" class="fa fa-youtube" target="_blank" title="Follow us on Youtube"></a>
+        <a href="#" class="fa fa-pinterest" target="_blank" title="Follow us on Pinterest"></a>
+    </div>
+
+
+    <footer>
+        <div class="end_footer">
+            <!--insert in the a tag individual pages links, and open it in the same webpage  -->  
+            <h4>
+                Creator <br> <a href="mandeepa.html" class="editor">Mandeepa De Silva</a> <br>
+            </h4>
+            <hr>
+
+            <h5>&copy; 2023-2024 GrooveCity | All Right Reserved</h5>
+        </div>
+    </footer> 
+    <script src="JS/main.js"></script>
+</body>
+</html>
